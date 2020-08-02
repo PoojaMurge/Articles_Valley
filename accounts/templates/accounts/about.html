@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<h1>About Us</h1>
+<h2>Publish your own web pages about your favorite topic at Article Alley</h2>
+<form class="site-form" action="/accounts/about/" method="post">
+    {% csrf_token %}
+    {{form}}
+    <img src="/media//social.png"></a>
+    <p>If you enjoy writing, you can write about things that you love at Article Alley. You can start by writing a page and then add more pages later on. You can focus on the same area of interest or write on a different subject every time you submit a page. The pages you create can be personal stories, interesting experiences, product reviews, instructional articles, tributes to admirable figures, news, or others.
+
+    <p>At Article Alley, you are allowed to submit as many pages as you want free of charge. By submitting pages constantly, you can impart knowledge and ideas to many people and enhance your reputation as a writer. If your pages are engaging enough, they will attract more readers and gain a more prominent position at the website.</p></p>
+    <p>Choosing the right topics to write on is also very important. Some of the topics that have been proven to be very popular among readers are how-to articles, book and movie reviews, top ten listings, money making advice, product recommendations, fitness tips, and others. To help you get started, here are some ideas for writing on Article Alley.</p>
+    <p> Have Fun..!!!</p>
+</form>
+{% endblock %}
+    

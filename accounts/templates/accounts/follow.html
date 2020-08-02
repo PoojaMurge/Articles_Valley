@@ -1,0 +1,19 @@
+{% extends 'base_layout.html' %}
+{% block content %}
+<h1>Follow Us..</h1>
+
+<form class="site-form" action="/accounts/follow/" method="post">
+    {% csrf_token %}
+    {{form}}
+    <p>If you have further questions, please let us know.</p>
+        
+    <img src="/media/mail.png"></a>pooja.murge94@gmail.com  
+    <p><img src="/media/call.png"></a>(+91)9421323948</p>
+    <p>Contact Us:</p>
+    <div class="image"><a href="https://www.facebook.com/"><img src="/media/fb.png"></a>
+    <a href="https://twitter.com/login/"><img src="/media/tw.png"></a>
+    <a href="https://www.linkedin.com//"><img src="/media/li.png"></a>
+    <a href="https://in.pinterest.com/"><img src="/media/pi.png"></a> 
+    <a href="https://accounts.google.com/"><img src="/media/mail.png"></a></div>        
+</form>
+{% endblock %}
